@@ -6,10 +6,8 @@ var router = express.Router();
 router.get("/", function (req, res) {
   if (req.session.username != null) {
     res.render("admin");
-    console.log("username != null");
   } else {
     res.redirect("/login");
-    console.log("username == null");
   }
 });
 
