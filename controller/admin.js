@@ -59,5 +59,9 @@ router.post(
     };
   }
 );
+//employeeList
+router.get("/AllEmployeeList", (req, res) => {
+  res.render("employeeList"), { userList: user };
+});
 
 module.exports = router;
